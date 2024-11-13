@@ -1,0 +1,12 @@
+package main
+
+import "fmt"
+
+func main() {
+
+	num1, num2, num3 := 747, 911, 90210
+
+	fmt.Printf("Num1 as decimal: %d \t As binary: %b \t As Hex: %#x\n", num1, num1, num1)
+	fmt.Printf("Num2 as decimal: %d \t As binary: %b \t As Hex: %#x\n", num2, num2, num2)
+	fmt.Printf("Num3 as decimal: %d \t As binary: %b \t As Hex: %#x\n", num3, num3, num3)
+}

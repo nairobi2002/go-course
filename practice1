@@ -1,0 +1,45 @@
+package main
+
+// Multiple Imports
+import (
+	"fmt"
+	"math"
+)
+
+const greet = "Hello World"
+
+//variableShortDeclaration := 10 cannot be used outside of the function
+
+func main() {
+
+	//Variable declaration
+	var a = 10
+
+	//Short declaration
+	b := 20
+	//Exports in capital letters when using a package
+	fmt.Printf("Result of addition %v + %v = %v\n", a, b, add(a, b))
+
+	//Square root of b, conversion to float64 is required, initially declared as int
+	fmt.Println(math.Sqrt(float64(b)))
+
+	//Greeting call
+	fmt.Printf("\n%v\n", greet)
+
+	//Naked return
+	fmt.Println("Naked return", nakedReturn())
+}
+
+// Function declaration, returns an integer
+func add(a, b int) int {
+
+	result := a + b
+
+	return result
+}
+
+// Naked return
+func nakedReturn() (a int) {
+	a = 10
+	return
+}

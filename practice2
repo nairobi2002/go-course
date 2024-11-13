@@ -1,0 +1,33 @@
+/*
+var for zero value
+short declaration operator
+multiple initializations
+var when specificity is required
+blank identifier
+
+*/
+
+package main
+
+import "fmt"
+
+func main() {
+
+	var a int
+
+	shortDeclatation := 1
+
+	var b, c, d int = 10, 20, 30
+
+	var e int = 40
+
+	_ = 666
+
+	fmt.Printf("a variable declaration %v \n", a)
+	fmt.Printf("short declaration %v \n", shortDeclatation)
+	fmt.Printf("b variable declaration %v \n", b)
+	fmt.Printf("c variable declaration %v \n", c)
+	fmt.Printf("d variable declaration %v \n", d)
+	fmt.Printf("e variable declaration %v \n", e)
+
+}
