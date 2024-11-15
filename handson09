@@ -1,0 +1,20 @@
+package main
+
+import (
+	"fmt"
+
+	"mymodule/nintendo"
+)
+
+func main() {
+	fmt.Println("Var: ", nintendo.Power)
+	fmt.Println("Const: ", nintendo.Color)
+	fmt.Println(printKirby())
+}
+
+func printKirby() string {
+
+	message := "Hello, Kirby!"
+
+	return message
+}
