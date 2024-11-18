@@ -9,7 +9,7 @@ func main() {
 	m := map[string]int{"James": 42, "Moneypenny": 32}
 	age := m["James"]
 	fmt.Println(age)
-
+	//lookup Q in the map
 	value, ok := m["Q"]
 
 	if ok {
