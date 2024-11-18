@@ -1,0 +1,26 @@
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	xi := []int{42, 43, 44, 45, 46, 47}
+	for i, v := range xi {
+		fmt.Printf("index %v \t value %v\n", i, v)
+	}
+	/*
+		in case of not using the i
+
+		for _, v := range xi {
+			fmt.Printf("value %v\n", v)
+		}
+
+		only index
+
+		for i := range xi {
+			fmt.Printf("index %v\n", i)
+		}
+
+	*/
+}

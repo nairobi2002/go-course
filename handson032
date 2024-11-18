@@ -1,0 +1,18 @@
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	y := 0
+
+	for {
+		if y == 20 {
+			break
+		}
+		y++
+		fmt.Printf("%v\n", y)
+
+	}
+}
