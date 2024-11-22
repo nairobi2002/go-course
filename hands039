@@ -1,0 +1,18 @@
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	//expected true
+	fmt.Println(true && true)
+	//expected false
+	fmt.Println(true && false)
+	//expected true
+	fmt.Println(true || true)
+	//expected true
+	fmt.Println(true || false)
+	//expected false
+	fmt.Println(!true)
+}
