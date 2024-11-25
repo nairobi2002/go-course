@@ -1,0 +1,26 @@
+package main
+
+import "fmt"
+
+func main() {
+	/*
+		Using a COMPOSITE LITERAL:
+		create an ARRAY which holds 5 VALUES of TYPE int
+		assign VALUES to each index position.
+		Range over the array and print the values out.
+		print out the VALUE and the TYPE
+	*/
+
+	a := [5]string{}
+
+	a[0] = "First"
+	a[1] = "Second"
+	a[2] = "Third"
+	a[3] = "Fourth"
+	a[4] = "Fifth"
+
+	for i, v := range a {
+		fmt.Printf("Index: %v, Value: %v, Type: %T.\n", i, v, v)
+	}
+
+}

@@ -1,0 +1,21 @@
+package main
+
+import "fmt"
+
+func main() {
+	xi := []int{42, 43, 44, 45, 46, 47, 48, 49, 50, 51}
+
+	fmt.Println("Original slice: ", xi)
+
+	/*
+		● [42 43 44 45 46]
+		● [47 48 49 50 51]
+		● [44 45 46 47 48]
+		● [43 44 45 46 47]
+	*/
+
+	fmt.Printf("\nFirst slice\t[42 43 44 45 46]: %v", xi[0:5])
+	fmt.Printf("\nSecond slice\t[47 48 49 50 51]: %v", xi[5:10])
+	fmt.Printf("\nThird slice\t[44 45 46 47 48]: %v", xi[2:7])
+	fmt.Printf("\nFourth slice\t[43 44 45 46 47]: %v", xi[1:6])
+}
